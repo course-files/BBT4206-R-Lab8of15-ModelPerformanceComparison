@@ -244,7 +244,7 @@ summary(diffs)
 ## Part A ----
 # Create a new file called
 # "Lab8-Submission-ModelPerformanceComparison.R".
-# Provide all the code you have used to demonstrate the comparison of 
+# Provide all the code you have used to demonstrate the comparison of
 # predictive models trained on a dataset other than the Pima Indians Diabetes
 # Dataset.
 
