@@ -126,6 +126,22 @@ if (require("caret")) {
                    repos = "https://cloud.r-project.org")
 }
 
+## kernlab ----
+if (require("kernlab")) {
+  require("kernlab")
+} else {
+  install.packages("kernlab", dependencies = TRUE,
+                   repos = "https://cloud.r-project.org")
+}
+
+## randomForest ----
+if (require("randomForest")) {
+  require("randomForest")
+} else {
+  install.packages("randomForest", dependencies = TRUE,
+                   repos = "https://cloud.r-project.org")
+}
+
 # STEP 2. Load the Dataset ----
 data(PimaIndiansDiabetes)
 
