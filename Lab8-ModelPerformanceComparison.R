@@ -150,7 +150,7 @@ data(PimaIndiansDiabetes)
 # Analogy: We cannot compare apples with oranges; we compare apples with apples.
 
 # The "resamples()"  function checks that the models are comparable and that
-# they used the same training scheme ("train_control" configuration).
+# they used the same training scheme ("trainControl" configuration).
 # To do this, after the models are trained, they are added to a list and we
 # pass this list of models as an argument to the resamples() function in R.
 
@@ -161,7 +161,7 @@ data(PimaIndiansDiabetes)
 #   CART
 #   KNN
 #   SVM
-#   Random Fores
+#   Random Forest
 
 train_control <- trainControl(method = "repeatedcv", number = 10, repeats = 3)
 
@@ -249,7 +249,7 @@ xyplot(results, models = c("SVM", "CART"))
 
 ### Lower Diagonal ----
 # The lower diagonal contains p-values of the null hypothesis.
-# The null hypothesis is a claim that "the distributions are the same".
+# The null hypothesis is a claim that "the models are the same".
 # A lower p-value is better (more significant).
 
 diffs <- diff(results)
